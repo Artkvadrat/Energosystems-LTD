@@ -1,0 +1,117 @@
+* {
+    font-family: "Rubik";
+}
+
+.headerBlock {
+    width: 100%;
+}
+
+.headerBlock .row {
+    padding: 0 100px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 134px;
+    height: 100px;
+}
+
+.logo p {
+    margin-left: 15px;
+    color: #ffffff;
+    font-size: 54px;
+    line-height: 100px;
+}
+
+.phones {
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.phoneNumber {
+    margin: 0;
+    line-height: 24px;
+}
+
+.phoneNumber a {
+    margin-left: 12px;
+    font-size: 16px;
+    color: white;
+}
+
+.phoneNumber a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.phoneNumber:before {
+    content: "";
+    background-image: url("./../img/call-answer-white.png");
+    background-size: 100%;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 5px;
+}
+
+.callBack {
+    margin: auto 0 auto 60px;
+}
+
+.callBack button{
+    background-color: rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: auto 0;
+    padding: 15px;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.callBack button:hover {
+    background-color: #f13333;
+    /*color: #f13333;*/
+    border-color: #f13333;
+    transition: 0.5s;
+}
+
+.headerLinksList {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLinksList li{
+    list-style-type: none;
+    /*display: inline-block;*/
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    transition: 0.5s;
+}
+
+.headerLinksList li:hover {
+    background-color: #f13333;
+    border-color: #f13333;
+    transition: 0.5s;
+}
+
+.headerLinksList li a {
+    color: white;
+}
+
+.headerLinksList li a:hover {
+    text-decoration: none;
+}
+
+.infoAboutPage {
+    text-align: center;
+}
