@@ -1,4 +1,61 @@
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/Myriad-Pro.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
+    user-select: none;
+    hyphens: auto;
+}
+
+.header {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.red {
+    color: #f13333;
+}
+
+.block .row{
+    padding: 0 100px;
+}
+
+.linkBack {
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.linkBack a{
+    display: flex;
+    text-decoration: none;
+    outline: none;
+}
+
+.linkBack:hover a{
+    text-decoration: none;
+}
+
+.linkBack img {
+    height: 30px;
+    width: auto;
+}
+
+.linkBack p{
+    font-size: 18px;
+    color: #f13333;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+@media (max-width: 1050px) {
+    .block .row{
+        padding: 0 20px;
+    }
 }

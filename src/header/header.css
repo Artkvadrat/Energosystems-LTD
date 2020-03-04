@@ -1,34 +1,32 @@
 * {
-    font-family: "Rubik";
+    font-family: "Myriad", sans-serif;
 }
 
 .headerBlock {
     width: 100%;
+    display: block;
 }
 
-.headerBlock .row {
-    padding: 0 80px;
-}
-
-.logo {
-    margin-top: 20px;
+.burgerMenuBlock {
+    display: none;
 }
 
 .logo img {
     width: auto;
-    height: 40px;
+    height: 70px;
     margin: auto 0;
 }
 
 .logo p {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 38px;
     margin: auto 0 auto 15px;
     line-height: 40px;
 }
 
 .phones {
     margin-top: 20px;
+    margin-right: 150px;
 }
 
 .phoneNumber {
@@ -75,9 +73,9 @@
 }
 
 .callBack button:hover {
-    background-color: #f13333;
-    /*color: #f13333;*/
-    border-color: #f13333;
+    /*background-color: #f13333;*/
+    color: #d97000;
+    border-color: #d97000;
     transition: 0.5s;
 }
 
@@ -85,34 +83,126 @@
     margin-top: 40px;
     margin-bottom: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .headerLinksList li{
     list-style-type: none;
     margin: 0 25px;
-    /*display: inline-block;*/
     font-size: 18px;
+    border-top: 2px solid rgba(0,0,0,0);
+    border-bottom: 2px solid rgba(0,0,0,0);
     padding: 10px 10px;
-    border: 0;
     background-color: rgba(0,0,0,0);
     transition: 0.5s;
 }
 
 .headerLinksList li:hover {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid #d97000;
+    border-bottom: 2px solid #d97000;
     transition: 0.5s;
 }
 
 .headerLinksList li a {
     color: white;
+    transition: 0.5s;
 }
 
-.headerLinksList li a:hover {
+.headerLinksList li:hover a {
     text-decoration: none;
+    color: #d97000;
+    transition: 0.5s;
 }
 
 .infoAboutPage {
     text-align: center;
 }
+
+@media (max-width: 1300px) {
+    .phones {
+        margin-right: 0;
+    }
+    .callBack {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .phones {
+        margin-right: 0;
+    }
+    .callBack {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .headerBlock {
+        display: none;
+    }
+
+    .burgerMenuBlock {
+        display: flex;
+        background-color: #d97000;
+        margin: 0;
+        padding: 0;
+    }
+    .bm-burger-button {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 35px;
+        height: 35px;
+    }
+    .bm-cross-button {
+        width: 35px ;
+        height: 35px;
+    }
+
+    .bm-item-list {
+        background-color: #d97000;
+        padding-top: 35px;
+        padding-left: 20px;
+    }
+
+    .bm-burger-button button {
+        margin-top: 15px!important;
+        margin-left: 35px!important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .bm-item{
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+        outline: none;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 22px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .bm-item:hover {
+        text-decoration: none;
+        outline: none;
+        color: white;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img {
+        margin-top: 20px;
+        width: 60px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .logo p {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
