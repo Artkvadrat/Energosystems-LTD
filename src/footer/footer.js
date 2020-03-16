@@ -2,11 +2,11 @@ import React, {Component} from "react";
 import './footer.css';
 import {Col, Container, Row} from "react-bootstrap";
 //importing images
-import phone from '../img/call-answer-red.png';
-import mail from '../img/mail.png';
-import geo from '../img/maps-and-flags.png';
-import instagram from '../img/instagram.png';
-import telegram from '../img/telegram.png';
+import phone from '../media/imgs/call-answer-red.png';
+import mail from '../media/imgs/mail.png';
+import geo from '../media/imgs/maps-and-flags.png';
+import instagram from '../media/imgs/instagram.png';
+import telegram from '../media/imgs/telegram.png';
 
 export default class Footer extends Component {
 

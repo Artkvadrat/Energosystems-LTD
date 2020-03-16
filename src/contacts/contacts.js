@@ -1,15 +1,17 @@
 import React, {Component} from "react";
 import './contacts.css';
 //import components
+import {Helmet} from "react-helmet";
 import Header from "../header/header";
 import {Col, Container, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 //import images
-import linkBack from '../img/back.png';
-import geoPosition from '../img/maps-and-flags.png';
-import phone from '../img/call-answer-red.png';
-import mail from '../img/mail.png';
-import instagram from '../img/instagram.png';
-import telegram from '../img/telegram.png';
+import linkBack from '../media/imgs/back.png';
+import geoPosition from '../media/imgs/maps-and-flags.png';
+import phone from '../media/imgs/call-answer-red.png';
+import mail from '../media/imgs/mail.png';
+import instagram from '../media/imgs/instagram.png';
+import telegram from '../media/imgs/telegram.png';
 import Footer from "../footer/footer";
 
 
@@ -17,12 +19,21 @@ export default class Contacts extends Component {
     render() {
         return (
             <>
-                <Header/>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Контакты | Energosystem LTD</title>
+                    <meta name="description" content=""/>
+                    <meta name="keywords" content="Energosystems LTD Электроотопление Новомосковск Контакты"/>
+                    {/*<link rel="canonical" href="http://mysite.com/example" />*/}
+                </Helmet>
+                <Header id={1}/>
                 <div className="linkBack">
-                    <a href="#">
-                        <img src={linkBack} alt="Link back"/>
-                        <p>назад</p>
-                    </a>
+                    <Col sm={2}>
+                        <Link to="/">
+                            <img src={linkBack} alt="Link back"/>
+                            <p>назад</p>
+                        </Link>
+                    </Col>
                 </div>
                 <Container fluid={true} className='block'>
                     <Row>

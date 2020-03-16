@@ -11,17 +11,22 @@
     display: none;
 }
 
-.logo img {
+.logo a{
+    display: flex;
+    text-decoration: none;
+    outline: none;
+}
+
+.logo a img {
     width: auto;
     height: 70px;
     margin: auto 0;
 }
 
-.logo p {
+.logo a p {
     color: #ffffff;
     font-size: 38px;
     margin: auto 0 auto 15px;
-    line-height: 40px;
 }
 
 .phones {
@@ -43,11 +48,12 @@
 .phoneNumber a:hover {
     outline: none;
     text-decoration: none;
+    color: #d97000;
 }
 
 .phoneNumber:before {
     content: "";
-    background-image: url("./../img/call-answer-white.png");
+    background-image: url("../media/imgs/call-answer-white.png");
     background-size: 100%;
     display: inline-block;
     height: 24px;
@@ -83,12 +89,12 @@
     margin-top: 40px;
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .headerLinksList li{
     list-style-type: none;
-    margin: 0 25px;
+    margin: 0 60px;
     font-size: 18px;
     border-top: 2px solid rgba(0,0,0,0);
     border-bottom: 2px solid rgba(0,0,0,0);

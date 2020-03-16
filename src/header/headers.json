@@ -1,0 +1,38 @@
+{
+  "1": {
+    "key": 1,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Контакты</h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / контакты</p>",
+    "title": "Контакты | Energosystems LTD"
+  },
+  "2": {
+    "key": 2,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">О компании</h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / о компании</p>",
+    "title": "О компании | Energosystems LTD"
+  },
+  "3": {
+    "key": 3,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Услуги</h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / услуги</p>",
+    "title": "Услуги | Energosystems LTD"
+  },
+  "4": {
+    "key": 4,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Работы</h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / работы</p>",
+    "title": "Работы | Energosystems LTD"
+  },
+  "5": {
+    "key":5,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Продукция</h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / продукция</p>",
+    "title": "Продукция | Energosystems LTD"
+  },
+  "999": {
+    "key": 999,
+    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\"></h1>",
+    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\"></a> </p>",
+    "title": "Работы | Energosystems LTD"
+  }
+}

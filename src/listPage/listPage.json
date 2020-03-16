@@ -1,0 +1,17 @@
+{
+  "1": {
+    "images": ["home", "residential"],
+    "headers": ["Для дома", "Для квартиры"],
+    "linksTo": ["", ""]
+  },
+  "2": {
+    "images": ["home", "residential"],
+    "headers": ["Для дома", "Для квартиры"],
+    "linksTo": ["", ""]
+  },
+  "3": {
+    "images": ["home", "residential", "home", "residential"],
+    "headers": ["Баратеи", "Бойлеры", "Баратеи", "Бойлеры"],
+    "linksTo": ["", ""]
+  }
+}

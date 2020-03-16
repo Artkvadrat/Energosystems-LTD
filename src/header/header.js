@@ -3,12 +3,16 @@ import './header.css';
 //importing components
 import {Col, Container, Row} from "react-bootstrap";
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from "react-router-dom";
+//import array "Headers" of headers and links from file
+import headers from './headers';
 //importing images
-import menu from '../img/menu.png';
-import cross from '../img/cancel.png';
-import backgroundImage from '../img/dwarfs-black.png';
-import logo from '../img/logo white.png';
-import "./../img/call-answer-white.png";
+import menu from '../media/imgs/menu.png';
+import cross from '../media/imgs/cancel.png';
+import backgroundImage from '../media/imgs/dwarfs-black.png';
+import logo from '../media/imgs/logo white.png';
+import "../media/imgs/call-answer-white.png";
+import {Helmet} from "react-helmet";
 
 const setBackground = {
     background: `url(${backgroundImage}) 100% no-repeat`
@@ -16,8 +20,19 @@ const setBackground = {
 
 export default class Header extends Component {
     render() {
+
+        const { id } = this.props;
+        console.log(id);
         return (
             <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{`${headers[id].title}`}</title>
+                    <meta name="description" content=""/>
+                    <meta name="keywords" content="Energosystems LTD Электроотопление Новомосковск Контакты"/>
+                    {/*<link rel="canonical" href="http://mysite.com/example" />*/}
+                </Helmet>
+
                 <Container className="headerBlock block"
                            fluid={true}
                            style={ setBackground }>
@@ -27,8 +42,10 @@ export default class Header extends Component {
                         </Col>
                         <Col lg={10} md={12} className="d-flex justify-content-between">
                             <div className="logo d-flex">
-                                <img src={logo} alt="Logo"/>
-                                <p>Energo Systems LTD</p>
+                                <Link to="/">
+                                    <img src={logo} alt="Logo"/>
+                                    <p>Energo Systems LTD</p>
+                                </Link>
                             </div>
                             <div className='d-flex'>
                                 <div className="phones">
@@ -64,34 +81,34 @@ export default class Header extends Component {
                             <div>
                                 <ul className="headerLinksList">
                                     <li>
-                                        <a href="">
+                                        <Link to="/services">
                                             Услуги
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <Link to="/works">
                                             Работы
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <Link to="/production">
                                             Продукция
-                                        </a>
+                                        </Link>
                                     </li>
+                                    {/*<li>*/}
+                                    {/*    <a href="">*/}
+                                    {/*        Галерея робот*/}
+                                    {/*    </a>*/}
+                                    {/*</li>*/}
                                     <li>
-                                        <a href="">
-                                            Галерея робот
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
+                                        <Link to="/about-company">
                                             О компании
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <Link to="/contact-us">
                                             Контакты
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -99,8 +116,10 @@ export default class Header extends Component {
                     </Row>
 
                     <div className="infoAboutPage">
-                        <p style={{color: '#d97000', fontSize: '70px', marginTop: '70px', letterSpacing: '3px', fontWeight: 700}}>МЫ СОЗДАЕМ КОМФОРТ</p>
-                        <p style={{color: 'white', fontSize: '40px', marginTop: '40px', paddingBottom: '90px'}}>а не просто устанавливаем отопление</p>
+                        <div dangerouslySetInnerHTML={ { __html: headers[id].firstLine } }/>
+                        <div dangerouslySetInnerHTML={ { __html: headers[id].secondLine } }/>
+                        {/*<p style={{color: '#d97000', fontSize: '70px', marginTop: '70px', letterSpacing: '3px', fontWeight: 700}}>{headers[1].firstLine}</p>*/}
+                        {/*<p style={{color: 'white', fontSize: '40px', marginTop: '40px', paddingBottom: '90px'}}>а не просто устанавливаем отопление</p>*/}
                     </div>
                 </Container>
                 <Container className="burgerMenuBlock" fluid={true}>
@@ -127,10 +146,8 @@ export default class Header extends Component {
                         </a>
                     </Menu>
                     <div className="logo">
-                    <a href="">
                         <img src={logo} alt="logo"/>
                         {/*<p>Energo Systems LTD</p>*/}
-                    </a>
                 </div>
                 </Container>
             </>
