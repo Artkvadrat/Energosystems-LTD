@@ -126,24 +126,24 @@ export default class Header extends Component {
                     <Menu width={250}
                           customBurgerIcon={<img src={ menu } alt="Open menu" />}
                           customCrossIcon={<img src={ cross } alt="Close menu" />}>
-                        <a href="">
+                        <Link to="/services">
                             Услуги
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/works">
                             Работы
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/production">
                             Продукция
-                        </a>
-                        <a href="">
-                            Галерея робот
-                        </a>
-                        <a href="">
+                        </Link>
+                        {/*<a href="">*/}
+                        {/*    Галерея робот*/}
+                        {/*</a>*/}
+                        <Link to="/about-company">
                             О компании
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="/contact-us">
                             Контакты
-                        </a>
+                        </Link>
                     </Menu>
                     <div className="logo">
                         <img src={logo} alt="logo"/>

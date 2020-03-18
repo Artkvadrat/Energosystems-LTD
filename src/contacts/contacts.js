@@ -62,20 +62,20 @@ export default class Contacts extends Component {
                             </a>
                         </Col>
                         <Col lg={3} md={12} className="contactsItem">
-                             <a href="">
+                             <a href="mailto: ">
                                 <img src={mail} alt="Phone"/>
                                 <p>example.info@gmail.com</p>
                             </a>
-                            <a href="">
+                            <a href="mailto: ">
                                 <img src={mail} alt="Phone"/>
                                 <p>example.info@gmail.com</p>
                             </a>
                         </Col>
                         <Col lg={1} md={12} className='socialLinks'>
-                            <a href="">
+                            <a href="https://telegram.com">
                                 <img src={telegram} alt="Telegram"/>
                             </a>
-                            <a href="">
+                            <a href="https://telegram.com">
                                 <img src={instagram} alt="Instagram"/>
                             </a>
                         </Col>
@@ -87,7 +87,7 @@ export default class Contacts extends Component {
                                 title="map"> </iframe>
                     </div>
                 </Container>
-                <Footer header={'Как уже начать грется? - '} redHeader={'Напишите нам!'}/>
+                <Footer header={'Как уже начать греться? - '} redHeader={'Напишите нам!'}/>
             </>
         )
     }

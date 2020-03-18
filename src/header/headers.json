@@ -1,38 +1,62 @@
 {
   "1": {
     "key": 1,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Контакты</h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / контакты</p>",
+    "firstLine": "<h1>Контакты</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / контакты</p>",
     "title": "Контакты | Energosystems LTD"
   },
   "2": {
     "key": 2,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">О компании</h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / о компании</p>",
+    "firstLine": "<h1>О компании</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / о компании</p>",
     "title": "О компании | Energosystems LTD"
   },
   "3": {
     "key": 3,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Услуги</h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / услуги</p>",
+    "firstLine": "<h1>Услуги</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / услуги</p>",
     "title": "Услуги | Energosystems LTD"
   },
   "4": {
     "key": 4,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Работы</h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / работы</p>",
+    "firstLine": "<h1>Работы</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / работы</p>",
     "title": "Работы | Energosystems LTD"
   },
   "5": {
     "key":5,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\">Продукция</h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\">главная</a> / продукция</p>",
+    "firstLine": "<h1>Продукция</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / продукция</p>",
     "title": "Продукция | Energosystems LTD"
   },
+  "6": {
+    "key":6,
+    "firstLine": "<h1>Услуги для дома</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/services\">услуги</a> / для дома</p>",
+    "title": "Услуги для дома | Energosystems LTD"
+  },
+  "7": {
+    "key":7,
+    "firstLine": "<h1>Услуги для квартиры</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/services\">услуги</a> / для квартиры</p>",
+    "title": "Услуги для квартиры | Energosystems LTD"
+  },
+  "8": {
+    "key":7,
+    "firstLine": "<h1>Работы в домах</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/works\">работы</a> / работы в домах</p>",
+    "title": "Работы в домах | Energosystems LTD"
+  },
+  "9": {
+  "key":7,
+  "firstLine": "<h1>Работы в квартирах</h1>",
+  "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/works\">услуги</a> / работы в квартирах</p>",
+  "title": "Работы в квартирах | Energosystems LTD"
+},
   "999": {
     "key": 999,
-    "firstLine": "<h1 style=\"margin-top: 50px; font-weight: 700; color: #d97000; letter-spacing: 3px; font-size: 70px\"></h1>",
-    "secondLine": "<p style=\"margin-top: 30px; padding-bottom: 20px; color: #fff; font-size: 20px\"><a href=\"/\" style=\"color: #fff; outline: none;\"></a> </p>",
+    "firstLine": "<h1></h1>",
+    "secondLine": "<p><a href=\"/\"></a></p>",
     "title": "Работы | Energosystems LTD"
   }
 }

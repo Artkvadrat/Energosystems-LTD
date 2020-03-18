@@ -1,69 +1,76 @@
 import React, {Component} from "react";
-import './listPage.css';
+import './detailedListPage.css';
 import '../app/app.css';
-// importing components
+//import components
 import Header from "../header/header";
-import Footer from "../footer/footer";
-import {Col, Container, Row} from "react-bootstrap";
-import { Link }  from "react-router-dom";
-//importing images
+import { Container, Col, Row } from "react-bootstrap";
+import {Link} from "react-router-dom";
 import linkBack from "../media/imgs/back.png";
-// importing data from .json file
-import data from './listPage.json';
+import Footer from "../footer/footer";
+// import data array from .json file
+import data from "./detailedListPage.json";
 
-export default class ListPage extends Component {
+
+export default class DetailedListPage extends Component {
 
     render() {
 
+        const { active } = this.props;
         // function to import whole directory of files
         let importAll = ( r ) => {
             return r.keys().map(r);
         };
-        const images = importAll(require.context('../media/imgs/products', true, /\.(png|jpe?g)$/ ));
+        const images = importAll(require.context('../media/imgs/products', true, /\.(png|PNG|jpe?g)$/ ));
+        // I use a key variable because images sometimes repeat, and it cause the same key tag in Col component
+        let key = 1;
         // get image url from .json and comparing with existed imgs throw url
-
         let getImages = ( item, id, dataId ) => {
             for ( let i = 0; i < images.length; i++ ){
                 if (images[i].indexOf(item) !== -1) {
-                    return <Col className="detailedListBlock" key={ i } md={12} lg={3}>
-                        <Link to={ data[dataId].linksTo[id] }><img src={ images[i]  } alt=" " /></Link>
+                    key++;
+                    return <Col className="detailedListBlock" key={ key } md={12} lg={3}>
+                        <Link to={ data[dataId].linksTo[id] }><img src={ images[i]  } alt=" "/></Link>
                         <p><Link to={ data[dataId].linksTo[id] }>{data[dataId].headers[id]}</Link></p>
                     </Col>
                 }
             }
         };
 
-        function findActiveWindow() {
-            let currentUrl = window.location.href;
-            let activeWindow = /(services|works|production)/.exec(currentUrl);
-            return ( activeWindow || '');
-        }
-
-
         let result, headerId;
         // id in data array is depended from url and will be set manually
-        switch (findActiveWindow()[0]) {
-            case 'services': {
-                headerId = 3;
+        switch ( active ) {
+            case 'service-home': {
+                headerId = 6;
                 result = <Row className="justify-content-center">
                     { data[1].images.map( (item, id) => getImages(item, id, 1) )}
                  </Row>;
                 break;
             }
-            case 'works': {
-                headerId = 4;
+
+            case 'service-flat': {
+                headerId = 7;
                 result = <Row className="justify-content-center">
                     { data[2].images.map( (item, id) => getImages(item, id, 2) )}
                  </Row>;
                 break;
             }
-            case 'production': {
-                headerId = 5;
+
+            case 'works-home': {
+                headerId = 8;
                 result = <Row className="justify-content-center">
                     { data[3].images.map( (item, id) => getImages(item, id, 3) )}
                  </Row>;
                 break;
             }
+
+            case 'works-flat': {
+                headerId = 9;
+                result = <Row className="justify-content-center">
+                    { data[4].images.map( (item, id) => getImages(item, id, 4) )}
+                 </Row>;
+                break;
+            }
+
             default: {
                 result = <div className="detailedListPageError">
                     <h3>Sorry, but we can't find information about it.</h3>
@@ -75,7 +82,7 @@ export default class ListPage extends Component {
 
         return (
             <>
-                {/*headerId is set up in switch*/}
+
                 <Header id={headerId||999}/>
 
                 <div className="linkBack">
@@ -86,15 +93,14 @@ export default class ListPage extends Component {
                         </Link>
                     </Col>
                 </div>
-                <Container fluid={true} className='block'>
 
-                    {result}
-
+                <Container fluid={true} className="block">
+                    { result }
                 </Container>
 
-                <Footer header={'Как оформить заказ? - '} redHeader={'Напишите нам!'}/>
-
-                </>
+                <Footer header={'Как начать греться? - '} redHeader={'Напишите нам!'}/>
+            </>
         )
     }
+
 }

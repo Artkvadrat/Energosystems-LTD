@@ -2,16 +2,16 @@
   "1": {
     "images": ["home", "residential"],
     "headers": ["Для дома", "Для квартиры"],
-    "linksTo": ["", ""]
+    "linksTo": ["/services/for-home", "/services/for-flat"]
   },
   "2": {
     "images": ["home", "residential"],
     "headers": ["Для дома", "Для квартиры"],
-    "linksTo": ["", ""]
+    "linksTo": ["/works/for-home", "/works/for-flat"]
   },
   "3": {
-    "images": ["home", "residential", "home", "residential"],
-    "headers": ["Баратеи", "Бойлеры", "Баратеи", "Бойлеры"],
-    "linksTo": ["", ""]
+    "images": ["home", "residential", "Котел 10", "Электрорадиатор главная"],
+    "headers": ["Баратеи", "Бойлеры", "Котлы", "Электрорадиаторы"],
+    "linksTo": ["", "", "", ""]
   }
 }

@@ -70,7 +70,7 @@ export default class Footer extends Component {
                                     <img src={mail} alt="Email"/>
                                     <p>example.info@gmail.com</p>
                                 </a>
-                                <a href="" className='d-flex footerContactItem'>
+                                <a href="https://www.google.com.ua/maps/place/Dorozhnaya+St,+Novomoskovsk,+Dnipropetrovs'ka+oblast,+51200/@48.6408614,35.2568383,17z/data=!3m1!4b1!4m5!3m4!1s0x40d9451d755cef05:0xd998bab0f67aa060!8m2!3d48.6408608!4d35.2587185?hl=en&authuser=0" className='d-flex footerContactItem'>
                                     <img src={geo} alt="Geo position"/>
                                     <p>г. Новомосковск, <br/>ул. Гетманская 40, 51200</p>
                                 </a>

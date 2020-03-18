@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../media/fonts/Myriad-Pro.otf';
 
 //import Router
-import { HashRouter as Router, Route, Switch} from "react-router-dom";
+import { HashRouter as Router, Route} from "react-router-dom";
 import { AnimatedSwitch } from 'react-router-transition';
 
 // importing components
 import Contacts from "../contacts/contacts";
 import AboutCompany from "../aboutCompany/aboutCompany";
 import ListPage from "../listPage/listPage";
+import DetailedListPage from "../detailedListPage/detailedListPage";
 
 const App = () => {
 
@@ -42,6 +43,26 @@ const App = () => {
                            exact/>
                     <Route path="/production"
                            component={ ListPage }
+                           exact/>
+                    <Route path="/services/for-home"
+                           render={ () => {
+                               return <DetailedListPage active={'service-home'}/>
+                           }}
+                           exact/>
+                    <Route path="/services/for-flat"
+                           render={ () => {
+                               return <DetailedListPage active={'service-flat'}/>
+                           }}
+                           exact/>
+                    <Route path="/works/for-home"
+                           render={ () => {
+                               return <DetailedListPage active={'works-home'}/>
+                           }}
+                           exact/>
+                    <Route path="/works/for-flat"
+                           render={ () => {
+                               return <DetailedListPage active={'works-flat'}/>
+                           }}
                            exact/>
                 </AnimatedSwitch>
             </Router>
