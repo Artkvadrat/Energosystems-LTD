@@ -20,7 +20,8 @@ export default class DetailedListPage extends Component {
         let importAll = ( r ) => {
             return r.keys().map(r);
         };
-        const images = importAll(require.context('../media/imgs/products', true, /\.(png|PNG|jpe?g)$/ ));
+        const images = importAll(require.context('../media/imgs/products', true, /\.(png|PNG|jpe?g|jpg)$/ ));
+        console.log(images);
         // I use a key variable because images sometimes repeat, and it cause the same key tag in Col component
         let key = 1;
         // get image url from .json and comparing with existed imgs throw url
@@ -67,6 +68,30 @@ export default class DetailedListPage extends Component {
                 headerId = 9;
                 result = <Row className="justify-content-center">
                     { data[4].images.map( (item, id) => getImages(item, id, 4) )}
+                 </Row>;
+                break;
+            }
+
+            case 'cermet-heaters': {
+                headerId = 10;
+                result = <Row className="justify-content-center">
+                    { data[5].images.map( (item, id) => getImages(item, id, 5) )}
+                 </Row>;
+                break;
+            }
+
+            case 'kettles': {
+                headerId = 11;
+                result = <Row className="justify-content-center">
+                    { data[6].images.map( (item, id) => getImages(item, id, 6) )}
+                 </Row>;
+                break;
+            }
+
+            case 'electric-radiators': {
+                headerId = 12;
+                result = <Row className="justify-content-center">
+                    { data[7].images.map( (item, id) => getImages(item, id, 7) )}
                  </Row>;
                 break;
             }

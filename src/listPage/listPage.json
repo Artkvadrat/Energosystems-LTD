@@ -10,8 +10,8 @@
     "linksTo": ["/works/for-home", "/works/for-flat"]
   },
   "3": {
-    "images": ["home", "residential", "Котел 10", "Электрорадиатор главная"],
-    "headers": ["Баратеи", "Бойлеры", "Котлы", "Электрорадиаторы"],
-    "linksTo": ["", "", "", ""]
+    "images": ["Uden 700",  "Котел 10", "Электрорадиатор главная","residential"],
+    "headers": ["Металлокерамические обогреватели от UDEN-S", "Котлы", "Электрорадиаторы", "Бойлеры"],
+    "linksTo": ["/production/cermet-heaters", "/production/kettles", "/production/electric-radiators", ""]
   }
 }

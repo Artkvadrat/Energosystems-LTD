@@ -13,6 +13,8 @@ import backgroundImage from '../media/imgs/dwarfs-black.png';
 import logo from '../media/imgs/logo white.png';
 import "../media/imgs/call-answer-white.png";
 import {Helmet} from "react-helmet";
+import CallbackModalWindow from "../modalWindows/callbackModalWindow";
+
 
 const setBackground = {
     background: `url(${backgroundImage}) 100% no-repeat`
@@ -22,7 +24,7 @@ export default class Header extends Component {
     render() {
 
         const { id } = this.props;
-        console.log(id);
+
         return (
             <>
                 <Helmet>
@@ -66,9 +68,7 @@ export default class Header extends Component {
                                     </p>
                                 </div>
                                 <div className="callBack">
-                                    <button>
-                                        Обратная связь
-                                    </button>
+                                    <CallbackModalWindow/>
                                 </div>
                             </div>
                         </Col>

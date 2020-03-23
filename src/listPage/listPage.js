@@ -26,7 +26,11 @@ export default class ListPage extends Component {
             for ( let i = 0; i < images.length; i++ ){
                 if (images[i].indexOf(item) !== -1) {
                     return <Col className="detailedListBlock" key={ i } md={12} lg={3}>
-                        <Link to={ data[dataId].linksTo[id] }><img src={ images[i]  } alt=" " /></Link>
+                        <div>
+                            <Link to={ data[dataId].linksTo[id] }>
+                                <img src={ images[i]  } alt=" " />
+                            </Link>
+                        </div>
                         <p><Link to={ data[dataId].linksTo[id] }>{data[dataId].headers[id]}</Link></p>
                     </Col>
                 }

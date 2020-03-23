@@ -42,17 +42,35 @@
     "title": "Услуги для квартиры | Energosystems LTD"
   },
   "8": {
-    "key":7,
+    "key": 8,
     "firstLine": "<h1>Работы в домах</h1>",
     "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/works\">работы</a> / работы в домах</p>",
     "title": "Работы в домах | Energosystems LTD"
   },
   "9": {
-  "key":7,
+  "key": 9,
   "firstLine": "<h1>Работы в квартирах</h1>",
   "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/works\">услуги</a> / работы в квартирах</p>",
   "title": "Работы в квартирах | Energosystems LTD"
-},
+  },
+  "10": {
+    "key": 10,
+    "firstLine": "<h1>Металлокерамические обогреватели</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/production\">продукция</a> / металлокерамические обогреватели</p>",
+    "title": "Металлокерамические обогреватели | Energosystems LTD"
+  },
+  "11": {
+    "key": 11,
+    "firstLine": "<h1>Котлы</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/production\">продукция</a> / котлы</p>",
+    "title": "Котлы | Energosystems LTD"
+  },
+  "12": {
+    "key": 12,
+    "firstLine": "<h1>Электрорадиаторы</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/production\">продукция</a> / электрорадиаторы</p>",
+    "title": "Электрорадиаторы | Energosystems LTD"
+  },
   "999": {
     "key": 999,
     "firstLine": "<h1></h1>",

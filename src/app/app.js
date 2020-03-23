@@ -64,6 +64,21 @@ const App = () => {
                                return <DetailedListPage active={'works-flat'}/>
                            }}
                            exact/>
+                    <Route path="/production/cermet-heaters"
+                           render={ () => {
+                               return <DetailedListPage active={'cermet-heaters'}/>
+                           }}
+                           exact/>
+                    <Route path="/production/kettles"
+                           render={ () => {
+                               return <DetailedListPage active={'kettles'}/>
+                           }}
+                           exact/>
+                    <Route path="/production/electric-radiators"
+                           render={ () => {
+                               return <DetailedListPage active={'electric-radiators'}/>
+                           }}
+                           exact/>
                 </AnimatedSwitch>
             </Router>
         </>

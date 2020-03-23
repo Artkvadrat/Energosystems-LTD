@@ -59,8 +59,14 @@ body {
 }
 
 .detailedListBlock {
+    margin-top: 40px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.detailedListBlock div {
+    height: 200px;
+    line-height: 200px;
 }
 
 .detailedListBlock img {
