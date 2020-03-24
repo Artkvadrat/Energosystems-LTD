@@ -71,6 +71,12 @@
     "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/production\">продукция</a> / электрорадиаторы</p>",
     "title": "Электрорадиаторы | Energosystems LTD"
   },
+  "13": {
+    "key": 13,
+    "firstLine": "<h1>Увелечение мощности до 220V</h1>",
+    "secondLine": "<p><a href=\"/\">главная</a> / <a href=\"/#/services\">услуги</a> / <a href=\"/#/services/for-home\">для дома</a> / увелечение мощности до 220V</p>",
+    "title": "Увелечение мощности до 220V | Energosystems LTD"
+  },
   "999": {
     "key": 999,
     "firstLine": "<h1></h1>",

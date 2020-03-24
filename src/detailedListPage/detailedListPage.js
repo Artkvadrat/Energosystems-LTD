@@ -21,7 +21,6 @@ export default class DetailedListPage extends Component {
             return r.keys().map(r);
         };
         const images = importAll(require.context('../media/imgs/products', true, /\.(png|PNG|jpe?g|jpg)$/ ));
-        console.log(images);
         // I use a key variable because images sometimes repeat, and it cause the same key tag in Col component
         let key = 1;
         // get image url from .json and comparing with existed imgs throw url

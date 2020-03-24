@@ -12,6 +12,7 @@ import Contacts from "../contacts/contacts";
 import AboutCompany from "../aboutCompany/aboutCompany";
 import ListPage from "../listPage/listPage";
 import DetailedListPage from "../detailedListPage/detailedListPage";
+import DetailedInfoPage from "../detailedInfoPage/detailedInfoPage";
 
 const App = () => {
 
@@ -79,6 +80,26 @@ const App = () => {
                                return <DetailedListPage active={'electric-radiators'}/>
                            }}
                            exact/>
+                    <Route path="/services/for-home/:id"
+                           render={ ({ match }) => {
+                               const { id } = match.params;
+                               return <DetailedInfoPage id={ id }/>
+                           }}/>
+                    <Route path="/services/for-flat/:id"
+                           render={ ({ match }) => {
+                               const { id } = match.params;
+                               return <DetailedInfoPage id={ id }/>
+                           }}/>
+                    <Route path="/works/for-home/:id"
+                           render={ ({ match }) => {
+                               const { id } = match.params;
+                               return <DetailedInfoPage id={ id }/>
+                           }}/>
+                    <Route path="/works/for-flat/:id"
+                           render={ ({ match }) => {
+                               const { id } = match.params;
+                               return <DetailedInfoPage id={ id }/>
+                           }}/>
                 </AnimatedSwitch>
             </Router>
         </>
